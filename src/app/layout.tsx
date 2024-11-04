@@ -3,18 +3,24 @@ import Header from "@/components/Header";
 import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Calistoga, Inter } from "next/font/google";
+import { Source_Serif_4, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const calistoga = Calistoga({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-sans",
   weight: ["400"],
 });
 
+const baskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  variable: "--font-serif", 
+  weight: ["400"],
+  style: ["italic"],
+});
+
 export const metadata: Metadata = {
-  title: "Ted Thoughts",
+  title: "Alex Dubljevic",
   description: "My personal site to showcase my developer work and opinions.",
 };
 
@@ -28,8 +34,8 @@ export default function RootLayout({
       <body
         className={cn(
           "mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased",
-          inter.variable,
-          calistoga.variable,
+          sourceSerif.variable,
+          baskerville.variable,
         )}
       >
         <Providers>

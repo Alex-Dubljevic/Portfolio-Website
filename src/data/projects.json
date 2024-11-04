@@ -1,96 +1,77 @@
 {
   "projects": [
     {
-      "name": "Tradingview Telegram Alerts",
-      "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
-      "image": "/tv-tele-alerts.png",
+      "name": "DimeDefender",
+      "description": "A security-focused web app designed to help users safeguard sensitive data by analyzing exposure levels and providing action steps to mitigate risks.",
+      "image": "/dimedefender.png",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "AWS Cloud"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/username/dimedefender",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "MpoxMap",
+      "description": "An interactive map-based dashboard tracking the spread of Mpox cases globally, providing visualizations and historical data insights for public health awareness.",
+      "image": "/mpoxmap.png",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Vercel",
+        "Mapbox"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/username/mpoxmap",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "UWFE Dashboard",
+      "description": "A custom telemetry dashboard developed for the University of Waterloo Formula Electric team to enhance driver experience with real-time car diagnostics and data visualization.",
+      "image": "/uwfe-dashboard.png",
       "tags": [
         "Python",
-        "FastAPI",
-        "Docker",
-        "Fly.io",
-        "Selenium",
-        "Telegram Bot API"
+        "AWS",
+        "CAN Bus",
+        "BeagleBone",
+        "Real-Time Data"
       ],
       "links": [
         {
-          "name": "Source",
-          "href": "https://github.com/tedawf/tradingview-telegram-alerts",
-          "icon": "github"
+          "name": "UWFE",
+          "href": "https://uwaterlooformulaelectric.ca",
+          "icon": "globe"
         }
       ]
     },
     {
-      "name": "NFTVue",
-      "description": "Non-Fungible Tokens (NFTs) Gallery Viewer website that allows users to connect their crypto wallets to view and verify their tokens",
-      "href": "https://nftvue.vercel.app",
-      "image": "/nftvue.png",
+      "name": "GameWave",
+      "description": "A platform that connects gamers with similar interests, helping users create communities, find teammates, and participate in gaming events and tournaments.",
+      "image": "/gamewave.png",
       "tags": [
-        "NextJS",
-        "TailwindCSS",
-        "MetaMask",
-        "WalletConnect",
-        "Web3",
-        "NFTScan",
-        "HashKey DID"
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "WebSocket"
       ],
       "links": [
         {
-          "name": "Website",
-          "href": "https://nftvue.vercel.app",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "Portfolio 2023 (Outdated)",
-      "description": "Simple markdown portfolio made with Astro 🚀",
-      "href": "https://tedawf-dot-com.netlify.app",
-      "image": "/old-portfolio.png",
-      "tags": ["Astro", "TailwindCSS", "Netlify", "SEO"],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://tedawf-dot-com.netlify.app",
-          "icon": "globe"
-        },
-        {
           "name": "Source",
-          "href": "https://github.com/tedawf/portfolio-2023",
+          "href": "https://github.com/username/gamewave",
           "icon": "github"
-        }
-      ]
-    },
-    {
-      "name": "Rapid Ride Fight (Final Year)",
-      "description": "3D capture-the-flag, multiplayer boat fighting, with smart AI and water graphics",
-      "href": "https://games.digipen.edu/games/rapid-ride-fight",
-      "image": "/rrf.png",
-      "tags": ["C/C++", "OpenGL", "Custom Game Engine", "3D"],
-      "links": [
-        {
-          "name": "Gameplay",
-          "href": "https://www.youtube.com/watch?v=bge3fiypg5U",
-          "icon": "youtube"
-        },
-        {
-          "name": "Trailer",
-          "href": "https://www.youtube.com/watch?v=PNAO-aI1Daw",
-          "icon": "youtube"
-        }
-      ]
-    },
-    {
-      "name": "Glowing Under (2nd Year)",
-      "description": "2D platformer with a focus on puzzle-solving, no-death exploration and storytelling",
-      "href": "https://games.digipen.edu/games/glowing-under",
-      "image": "/gu.png",
-      "tags": ["C/C++", "OpenGL", "Custom Game Engine", "2D"],
-      "links": [
-        {
-          "name": "Trailer",
-          "href": "https://www.youtube.com/watch?v=u6RYwBZlSfg",
-          "icon": "youtube"
         }
       ]
     }

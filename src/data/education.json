@@ -1,37 +1,49 @@
 {
   "education": [
     {
-      "name": "Digipen Institute of Technology Singapore",
-      "href": "https://www.digipen.edu.sg",
-      "title": "BS in Computer Science in Real-Time Interactive Simulation",
-      "logo": "/digipen.png",
-      "start": "Sep 2019",
-      "end": "Apr 2023",
+      "name": "University of Waterloo",
+      "href": "https://uwaterloo.ca",
+      "title": "Bachelor of Computer Science",
+      "logo": "/uwaterloo.png",
+      "start": "Sep 2023",
+      "end": "Present",
       "description": [
-        "Graduated with a Minor in Mathematics",
-        "President of Digipen Student Management Committee for freshman year",
-        "3-time recipient of the Dean's Honor List"
+        "Focused on software engineering, data analysis, and large-scale application development",
+        "Member of the Formula Electric team, where I led the development of a real-time telemetry dashboard",
+        "Finalist at Hack the North 2024"
       ],
       "links": [
         {
-          "name": "Final Year Project",
-          "href": "https://games.digipen.edu/games/rapid-ride-fight",
+          "name": "Formula Electric Project",
+          "href": "https://uwaterlooformulaelectric.ca/",
           "icon": "globe"
         },
         {
-          "name": "2nd Year Project",
-          "href": "https://games.digipen.edu/games/glowing-under",
+          "name": "Hack the North 2024 Project",
+          "href": "https://hackthenorth.com/",
           "icon": "globe"
         }
       ]
     },
     {
-      "name": "Singapore Polytechnic",
-      "href": "https://www.sp.edu.sg",
-      "title": "Diploma in Games Design and Development",
-      "logo": "/sp.png",
-      "start": "Apr 2014",
-      "end": "May 2017"
+      "name": "Wilfrid Laurier University",
+      "href": "https://wlu.ca",
+      "title": "Bachelor of Business Administration",
+      "logo": "/wlu.png",
+      "start": "Sep 2023",
+      "end": "Present",
+      "description": [
+        "Developed skills in project management, strategic analysis, and financial modeling",
+        "Engaged in cross-functional projects that combine technical and business perspectives",
+        "Active participant in Laurier's business case competitions"
+      ],
+      "links": [
+        {
+          "name": "Business Case Competition",
+          "href": "https://www.wlu.ca/programs/business-and-economics/",
+          "icon": "globe"
+        }
+      ]
     }
   ]
 }
