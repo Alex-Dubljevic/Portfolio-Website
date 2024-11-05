@@ -28,19 +28,20 @@ export default async function Home() {
           className="rounded-lg"
           src="/alex.png"
           alt="Photo of Alex"
-          width={175}
-          height={175}
+          width={225}
+          height={225}
           priority
+          quality={100}
         />
         <div className="flex flex-col">
-          <h1 className="title text-5xl">hi alex here 👋</h1>
+          <h1 className="title text-5xl">hi! alex here 👋</h1>
           <p className="mt-4 font-light">
             {/* Update my age */}
             {new Date().getFullYear() - ALEX_BIRTH_YEAR}
-            -year-old software developer from Canada 🇨🇦
+            -year-old Computer Science and Business student at the University of Waterloo 🇨🇦 
           </p>
           <p className="mt-2 font-light">
-            I like to develop apps and learn new things
+            I like to explore new technologies and develop creative solutions
           </p>
           <section className="mt-8 flex items-center gap-8">
             <Link href="/resume.pdf" target="_blank">

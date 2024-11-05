@@ -16,7 +16,7 @@ const baskerville = Libre_Baskerville({
   subsets: ["latin"],
   variable: "--font-serif", 
   weight: ["400"],
-  style: ["italic"],
+  style: ["italic"]
 });
 
 export const metadata: Metadata = {
