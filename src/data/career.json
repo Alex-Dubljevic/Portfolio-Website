@@ -8,11 +8,9 @@
       "start": "Sep 2023",
       "end": "Present",
       "description": [
-        "Led the development of a new driver dashboard, improving readability and simplifying car debugging for the team",
-        "Designed and implemented CAN connectivity for real-time telemetry, allowing critical data transfer between the car and dashboard",
-        "Enhanced the dashboard’s usability, increasing data readability and performance, and installed the program onto a standalone Beaglebone Black running Debian Linux",
-        "Developed cloud-based telemetry dashboards for real-time analysis using AWS services including API Gateway and Lambda",
-        "Collaborated in Agile sprints to rapidly iterate on designs, receiving and implementing team feedback to ensure alignment with driver requirements and team goals"
+        "Led the development of an internal dashboard for live telemetry, enabling team members to monitor real-time performance from over 150 data sources, eliminating the need to restart the vehicle to view sensor data",
+        "Ensured timely development and deployment of team software by utilizing SDLC and Agile methodologies for effective project management, leading to increased team velocity and a 35% reduction in work-in-progress tasks",
+        "Collaborated with over 100 team members by utilizing Atlassian Suite (Jira, Confluence, Bitbucket) to manage workflows, coordinate resources, and track project progress across more than 10 cross-functional teams"
       ]
     }
   ]

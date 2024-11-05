@@ -2,19 +2,25 @@
   "projects": [
     {
       "name": "DimeDefender",
-      "description": "A security-focused web app designed to help users safeguard sensitive data by analyzing exposure levels and providing action steps to mitigate risks.",
+      "description": "Chrome extension that helps users improve financial habits and reduce impulse purchases. Blocks checkout on Amazon and Shopify while the user watches an AI cutscene.",
       "image": "/dimedefender.png",
+      "hackathon": "Hack the North 2024 Winner",
       "tags": [
-        "Next.js",
-        "TypeScript",
-        "Node.js",
-        "AWS Cloud"
+        "AWS Cloud",
+        "Svelte",
+        "GenAI",
+        "Voiceflow"
       ],
       "links": [
         {
           "name": "Source",
-          "href": "https://github.com/username/dimedefender",
+          "href": "https://github.com/aryanp05/hackthenorth24",
           "icon": "github"
+        },
+        {
+          "name": "Devpost",
+          "href": "https://devpost.com/alexdubljevic/budget-defender",
+          "icon": "globe"
         }
       ]
     },
@@ -22,6 +28,7 @@
       "name": "MpoxMap",
       "description": "An interactive map-based dashboard tracking the spread of Mpox cases globally, providing visualizations and historical data insights for public health awareness.",
       "image": "/mpoxmap.png",
+      "hackathon": "Ignition Hacks 2024 Winner",
       "tags": [
         "React",
         "TypeScript",
@@ -32,23 +39,32 @@
       "links": [
         {
           "name": "Source",
-          "href": "https://github.com/username/mpoxmap",
+          "href": "https://github.com/alex-dubljevic/mpoxmap",
           "icon": "github"
+        },
+        {
+          "name": "Website",
+          "href": "https://mpox-map.vercel.app",
+          "icon": "globe"
         }
       ]
     },
     {
       "name": "UWFE Dashboard",
-      "description": "A custom telemetry dashboard developed for the University of Waterloo Formula Electric team to enhance driver experience with real-time car diagnostics and data visualization.",
+      "description": "A custom driver dashboard developed for the University of Waterloo Formula Electric team to enhance driver experience with real-time car diagnostics and debugging.",
       "image": "/uwfe-dashboard.png",
       "tags": [
         "Python",
-        "AWS",
-        "CAN Bus",
-        "BeagleBone",
-        "Real-Time Data"
+        "Linux",
+        "CAN Network",
+        "Figma"
       ],
       "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/alex-dubljevic/uwfe-dashboard",
+          "icon": "github"
+        },
         {
           "name": "UWFE",
           "href": "https://uwaterlooformulaelectric.ca",
@@ -58,19 +74,17 @@
     },
     {
       "name": "GameWave",
-      "description": "A platform that connects gamers with similar interests, helping users create communities, find teammates, and participate in gaming events and tournaments.",
+      "description": "A mock videogame marketplace, where users can get sign up for recommendations based on their interests, and leave reviews for games they've played.",
       "image": "/gamewave.png",
       "tags": [
-        "JavaScript",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "WebSocket"
+        "Java",
+        "PostgreSQL",
+        "HTTP API"
       ],
       "links": [
         {
           "name": "Source",
-          "href": "https://github.com/username/gamewave",
+          "href": "https://github.com/alex-dubljevic/gamewave",
           "icon": "github"
         }
       ]

@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/Button";
 import { getPosts } from "@/lib/posts";
+import { FlipWords } from "@/components/ui/flip-words";
 import {
   ArrowDownRight,
   ArrowRightIcon,
@@ -14,9 +15,11 @@ import Image from "next/image";
 import Link from "next/link";
 import path from "path";
 
+
 const blogDirectory = path.join(process.cwd(), "content");
 const ALEX_BIRTH_YEAR = 2005;
-const LIMIT = 2; // max show 2
+const LIMIT = 2;
+const words = ["AI", "Cloud", "DevOps", "Project Management"];
 
 export default async function Home() {
   const posts = await getPosts(blogDirectory, LIMIT);
@@ -38,9 +41,16 @@ export default async function Home() {
           <p className="mt-4 font-light">
             Computer Science and Business student at the University of Waterloo 🇨🇦 
           </p>
-          <p className="mt-2 font-light">
-            I like to explore new technologies and develop creative solutions
-          </p>
+          <div className="mt-2 font-light">
+            I like to explore new technologies and develop creative solutions, currently learning about{""}
+            <span className="inline-flex items-center">
+              <FlipWords
+                words={words}
+                duration={2000}
+                className="text-primary font-medium"
+              />
+            </span>
+          </div>
           <section className="mt-8 flex items-center gap-8">
             <Link href="/resume.pdf" target="_blank">
               <Button variant="outline">

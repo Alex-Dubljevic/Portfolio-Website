@@ -17,7 +17,7 @@ interface Props {
 }
 
 export function ProjectCard({ project }: Props) {
-  const { name, href, description, image, tags, links } = project;
+  const { name, href, description, image, tags, links, hackathon } = project;
 
   return (
     <Card className="flex flex-col">
@@ -29,7 +29,7 @@ export function ProjectCard({ project }: Props) {
               alt={name}
               width={500}
               height={300}
-              className="h-40 w-full object-cover object-top"
+              className="h-40 w-full object-cover object-top rounded-sm"
             />
           </Link>
         )}
@@ -40,6 +40,14 @@ export function ProjectCard({ project }: Props) {
           {description}
         </Markdown>
       </CardContent>
+      {hackathon && (
+        <div className="px-6 pb-2">
+          <div className="inline-flex items-center gap-2 rounded-lg border bg-secondary/50 px-2 py-1">
+            <Icon name="trophy" className="size-3 text-yellow-500" />
+            <span className="text-xs font-medium">{hackathon}</span>
+          </div>
+        </div>
+      )}
       <CardFooter className="flex h-full flex-col items-start justify-between gap-4">
         {tags && tags.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
