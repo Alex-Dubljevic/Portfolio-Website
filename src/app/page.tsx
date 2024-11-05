@@ -36,9 +36,7 @@ export default async function Home() {
         <div className="flex flex-col">
           <h1 className="title text-5xl">hi! alex here 👋</h1>
           <p className="mt-4 font-light">
-            {/* Update my age */}
-            {new Date().getFullYear() - ALEX_BIRTH_YEAR}
-            -year-old Computer Science and Business student at the University of Waterloo 🇨🇦 
+            Computer Science and Business student at the University of Waterloo 🇨🇦 
           </p>
           <p className="mt-2 font-light">
             I like to explore new technologies and develop creative solutions
