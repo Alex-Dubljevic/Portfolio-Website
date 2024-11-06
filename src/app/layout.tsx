@@ -21,7 +21,7 @@ const baskerville = Libre_Baskerville({
 
 export const metadata: Metadata = {
   title: "Alex Dubljevic",
-  description: "My personal site to showcase my developer work and opinions.",
+  description: "My personal site to showcase my developer work.",
 };
 
 export default function RootLayout({
