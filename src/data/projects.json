@@ -19,7 +19,7 @@
         },
         {
           "name": "Devpost",
-          "href": "https://devpost.com/alexdubljevic/budget-defender",
+          "href": "https://devpost.com/software/budget-defender",
           "icon": "globe"
         }
       ]
@@ -64,11 +64,6 @@
           "name": "Source",
           "href": "https://github.com/alex-dubljevic/uwfe-dashboard",
           "icon": "github"
-        },
-        {
-          "name": "UWFE",
-          "href": "https://uwaterlooformulaelectric.ca",
-          "icon": "globe"
         }
       ]
     },
