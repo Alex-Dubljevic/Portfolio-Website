@@ -39,10 +39,10 @@ export default async function Home() {
         <div className="flex flex-col">
           <h1 className="title text-5xl">hi! alex here 👋</h1>
           <p className="mt-4 font-light">
-            Computer Science and Business student at the University of Waterloo 🇨🇦 
+            My name is Alex Dubljevic and I'm a Computer Science and Business student at the University of Waterloo 🇨🇦 
           </p>
           <div className="mt-2 font-light">
-            I like to explore new technologies and develop creative solutions, currently learning about{""}
+            I love to explore new technologies and develop creative solutions, currently learning about{""}
             <span className="inline-flex items-center">
               <FlipWords
                 words={words}
