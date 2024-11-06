@@ -37,7 +37,7 @@ export default async function Home() {
           quality={100}
         />
         <div className="flex flex-col">
-          <h1 className="title text-5xl">hi! alex here 👋</h1>
+          <h1 className="title text-5xl">Hi! Alex here 👋</h1>
           <p className="mt-4 font-light">
             My name is Alex Dubljevic and I&apos;m a Computer Science and Business student at the University of Waterloo 🇨🇦 
           </p>
