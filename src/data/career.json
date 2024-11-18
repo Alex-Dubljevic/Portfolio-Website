@@ -1,6 +1,17 @@
 {
   "career": [
     {
+      "name": "Cloud Engineer",
+      "href": "https://www.cibc.com/",
+      "title": "CIBC",
+      "logo": "/cibc.png",
+      "start": "Jan 2025",
+      "end": "April 2025",
+      "description": [
+        "Incoming Winter 2025"
+      ]
+    }, 
+    {
       "name": "Software Engineer - Dashboard Lead",
       "href": "https://www.uwfsae.ca/",
       "title": "University of Waterloo Formula Electric",
