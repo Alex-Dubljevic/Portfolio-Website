@@ -4,6 +4,7 @@
       "name": "DimeDefender",
       "description": "Chrome extension that helps users improve financial habits and reduce impulse purchases. Blocks checkout on Amazon and Shopify while the user watches an AI cutscene.",
       "image": "/dimedefender.png",
+      "imageHref": "https://devpost.com/software/budget-defender",
       "hackathon": "Hack the North 2024 Winner",
       "tags": [
         "AWS Cloud",
@@ -28,6 +29,7 @@
       "name": "MpoxMap",
       "description": "An interactive map-based dashboard tracking the spread of Mpox cases globally, providing visualizations and historical data insights for public health awareness.",
       "image": "/mpoxmap.png",
+      "imageHref": "https://mpox-map.vercel.app",
       "hackathon": "Ignition Hacks 2024 Winner",
       "tags": [
         "React",
@@ -53,6 +55,7 @@
       "name": "UWFE Dashboard",
       "description": "A custom driver dashboard developed for the University of Waterloo Formula Electric team to enhance driver experience with real-time car diagnostics and debugging.",
       "image": "/uwfe-dashboard.png",
+      "imageHref": "https://github.com/alex-dubljevic/uwfe-dashboard",
       "tags": [
         "Python",
         "Linux",
@@ -71,6 +74,7 @@
       "name": "GameWave",
       "description": "A mock videogame marketplace, where users can get sign up for recommendations based on their interests, and leave reviews for games they've played.",
       "image": "/gamewave.png",
+      "imageHref": "https://github.com/alex-dubljevic/gamewave",
       "tags": [
         "Java",
         "PostgreSQL",

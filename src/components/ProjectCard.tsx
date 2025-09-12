@@ -17,13 +17,13 @@ interface Props {
 }
 
 export function ProjectCard({ project }: Props) {
-  const { name, href, description, image, tags, links, hackathon } = project;
+  const { name, href, description, image, imageHref, tags, links, hackathon } = project;
 
   return (
     <Card className="flex flex-col">
       <CardHeader>
         {image && (
-          <Link href={href || image}>
+          <Link href={imageHref || href || image} target="_blank">
             <Image
               src={image}
               alt={name}
@@ -42,7 +42,7 @@ export function ProjectCard({ project }: Props) {
       </CardContent>
       {hackathon && (
         <div className="px-6 pb-2">
-          <div className="inline-flex items-center gap-2 rounded-lg border bg-secondary/50 px-2 py-1">
+          <div className="inline-flex items-center gap-2 rounded-lg bg-secondary/50 px-2 py-1 border border-yellow-400/50 animate-neon-pulse">
             <Icon name="trophy" className="size-3 text-yellow-500" />
             <span className="text-xs font-medium">{hackathon}</span>
           </div>

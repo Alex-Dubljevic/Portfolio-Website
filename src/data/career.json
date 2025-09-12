@@ -8,15 +8,16 @@
       "start": "Jan 2025",
       "end": "April 2025",
       "description": [
-        "Implemented new Azure resources and configurations (Databricks, VM) for enterprise applications across dev/test/prod environments, completing 63 tickets with zero post-deployment rollback incidents",
-        "Matched the productivity of senior engineers by delivering over 10 story points per sprint in an Agile Scrum environment, ensuring timely delivery of cloud infrastructure solutions while writing comprehensive documentation",
-        "Resolved SEV2 incident by diagnosing deployment and network failures, restoring availability for 1000s of users"
+        "Deployed and tested new Azure resource configurations (Databricks, VMs, Storage) for enterprise applications across dev/test/prod environments, completing 63 Jira tickets with zero post-deployment rollback incidents",
+        "Delivered over 10 story points per sprint in an Agile Scrum environment, matching the productivity of senior engineers, while also thoroughly documenting infrastructure changes for knowledge sharing and audit compliance",
+        "Mitigated a SEV2 outage by troubleshooting with Azure Network Watcher, identifying and correcting NSG/VNet misconfigurations, restoring service for thousands of users",
+        "Recognized as a top-performing intern and admitted into CIBC Spark, a selective program for high-achieving interns based on quickly mastering complex systems and independently contributing to production infrastructure by week 3"
       ]
-    }, 
+    },
     {
       "name": "Software Engineer - Dashboard Lead",
       "href": "https://www.uwfsae.ca/",
-      "title": "University of Waterloo Formula Electric",
+      "title": "University of Waterloo Formula Electric",  
       "logo": "/uwaterloo-fe.png",
       "start": "Sep 2023",
       "end": "Present",

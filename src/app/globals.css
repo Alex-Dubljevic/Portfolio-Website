@@ -78,8 +78,32 @@
   * {
     @apply border-border;
   }
+  html {
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+  }
   body {
     @apply bg-background text-foreground;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+  }
+  * {
+    scroll-behavior: smooth;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 4px;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
   }
   .title {
     @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
