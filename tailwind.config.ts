@@ -79,7 +79,7 @@ const config: Config = {
         },
         "neon-pulse": {
           "0%, 100%": {
-            boxShadow: "0 0 2px #facc15, 0 0 4px #facc15",
+            boxShadow: "0 0 1px #facc15, 0 0 2px #facc15",
           },
           "50%": {
             boxShadow: "0 0 8px #facc15, 0 0 16px #facc15",
@@ -89,7 +89,7 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "neon-pulse": "neon-pulse 2s ease-in-out infinite",
+        "neon-pulse": "neon-pulse 3s ease-in-out infinite",
       },
     },
   },
