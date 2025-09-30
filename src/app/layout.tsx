@@ -4,6 +4,7 @@ import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Source_Serif_4, Libre_Baskerville } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const sourceSerif = Source_Serif_4({
@@ -43,6 +44,7 @@ export default function RootLayout({
           <main className="grow">{children}</main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
