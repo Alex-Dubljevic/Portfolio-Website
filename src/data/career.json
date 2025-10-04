@@ -8,10 +8,8 @@
       "start": "Jan 2025",
       "end": "April 2025",
       "description": [
-        "Deployed and tested new Azure resource configurations (Databricks, VMs, Storage) for enterprise applications across dev/test/prod environments, completing 63 Jira tickets with zero post-deployment rollback incidents",
-        "Delivered over 10 story points per sprint in an Agile Scrum environment, matching the productivity of senior engineers, while also thoroughly documenting infrastructure changes for knowledge sharing and audit compliance",
-        "Mitigated a SEV2 outage by troubleshooting with Azure Network Watcher, identifying and correcting NSG/VNet misconfigurations, restoring service for thousands of users",
-        "Recognized as a top-performing intern and admitted into CIBC Spark, a selective program for high-achieving interns based on quickly mastering complex systems and independently contributing to production infrastructure by week 3"
+        "Worked on the Application Enablement team to migrate enterprise applications to Azure Cloud",
+        "Recognized as a top-performing intern and admitted into the exclusive CIBC Spark program"
       ]
     },
     {
@@ -22,9 +20,8 @@
       "start": "Sep 2023",
       "end": "Present",
       "description": [
-        "Led the development of an internal dashboard for live telemetry, enabling team members to monitor real-time performance from over 150 data sources, eliminating the need to restart the vehicle to view sensor data",
-        "Ensured timely development and deployment of team software by utilizing SDLC and Agile methodologies for effective project management, leading to increased team velocity and a 35% reduction in work-in-progress tasks",
-        "Collaborated with over 100 team members by utilizing Atlassian Suite (Jira, Confluence, Bitbucket) to manage workflows, coordinate resources, and track project progress across more than 10 cross-functional teams"
+        "Working with the Data Acquistion and Dashboard teams to develop custom telemetry systems for the team",
+        "Led the development of the team's driver dashboard for monitoring real-time performance from over 150 data sources"
       ]
     }
   ]
