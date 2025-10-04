@@ -52,6 +52,24 @@
       ]
     },
     {
+      "name": "Jedi Robots",
+      "description": "Hack the North 2025 Project to create lightsaber wielding robots that can duel each other. Robotic arm is controlled via phone gyroscope and accelerometer, converted to motion angles using an inverse kinematics algorithm.",
+      "image": "/jedirobots.png",
+      "imageHref": "https://devpost.com/software/jedi-clanker",
+      "tags": [
+        "Python",
+        "Robotics",
+        "Inverse Kinematics"
+      ],
+      "links": [
+        {
+          "name": "Devpost",
+          "href": "https://devpost.com/software/jedi-clanker",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "UWFE Dashboard",
       "description": "A custom driver dashboard developed for the University of Waterloo Formula Electric team to enhance driver experience with real-time car diagnostics and debugging.",
       "image": "/uwfe-dashboard.png",
