@@ -4,6 +4,8 @@
 
 @layer base {
   :root {
+    --font-sans: 'Source Serif 4';
+    --font-serif: 'Libre Baskerville';
     --background: 48 100% 97%;
     --foreground: 224 71.4% 4.1%;
     --card: 48 100% 97%;
@@ -106,7 +108,7 @@
     background: hsl(var(--muted-foreground) / 0.5);
   }
   .title {
-    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
+    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2 italic;
   }
   .link {
     @apply text-muted-foreground transition-colors hover:text-foreground;
