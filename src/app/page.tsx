@@ -53,7 +53,7 @@ export default async function Home() {
           </div>
           <section className="mt-8 flex items-center gap-8">
             <Link href="/resume.pdf" target="_blank">
-              <Button variant="outline">
+              <Button variant="outline" className="transition-transform duration-200 ease-in-out hover:scale-105">
                 <span className="font-semibold">Resume</span>
                 <FileDown className="ml-2 size-5" />
               </Button>
