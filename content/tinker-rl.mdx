@@ -1,0 +1,83 @@
+---
+title: "Teaching an LLM to Play NYT Connections via RL"
+summary: "My experience learning how to do Reinforcement Learning with Tinker, and training a small model to play NYT Connections"
+image: "/tinker.png"
+publishedAt: "2025-11-28"
+---
+
+import { CodeBlock } from 'some-mdx-components'
+
+
+Over the weekend, I dove into something I'd never done before: training a large language model with Reinforcement Learning (RL) using Tinker (from Thinking Machines) with the goal of teaching it how to solve NYT Connections puzzles. 
+While I started with pretty minimal RL experience, the process was both a strong learning experience and incredibly fun.
+
+In this post, I’ll walk through what I actually did, where things got messy, what worked (really well), and how I managed to train a model that solves 99%+ of NYT Connections puzzles. 
+My hope is this post helps others get inspired to try RL on niche tasks, and maybe learn from my mistakes.
+
+## What Is Tinker
+
+First, a quick explainer for context: Tinker is a model training API from Thinking Machines that gives you very low-level control over training loops (e.g., forward_backward, optim_step) while the platform handles distributed training and infrastructure.
+It supports both RL and LoRA fine-tuning, which keeps experiments fast and cheap.
+Tinker also has a cookbook of reference recipes (tool-use, math, etc.) to help you bootstrap and get started with some simpler tasks to get your feet wet.
+They were also gracious enough to credit me with $150 in compute for which I am grateful for.
+
+## The Beginning
+
+I started by digging into the reference material. I read a couple of policy-learning and tool-use papers, and browsed the cookbook recipes Tinker provides. 
+I decided to try to replicate a multihop search agent with retrieval over a large knowledge base like Wikipedia. 
+For my model I chose Qwen3-4B-Instruct-2507 since it was supported by Tinker and small enough to run locally on my Mac. 
+
+I immediately hit a practical problem: the full Wikipedia embeddings needed for training (around 160 gigabytes) wouldn’t fit in memory on my laptop. 
+I hacked together a workaround by downloading a 200k-article subset and generating embeddings using the Gemini embeddings model, then storing them in a Chroma vector DB locally. 
+My first attempt failed and burned credits, but eventually I got all the embeddings, tested that retrieval was working properly, and launched my first RL experiment.
+
+It didn’t learn multi-step reasoning at all. After more than 50 training steps, the policy collapsed and converged into always making a single tool call. 
+I tried hyperparameter changes, tweaks to the reward function, incentives for multiple calls, and read more theory along the way, but nothing changed. 
+The model got decent at single-hop retrieval, but never developed multi-step reasoning. Looking back, the small corpus size and narrow coverage of my DB probably made multi-hop useless, so optimization naturally ignored it. 
+Instead of banging my head against the wall and wasting more credits, I decided to pivot and try something else.
+
+## Pivoting to NYT Connections
+
+NYT Connections has always been my favourite daily puzzle, and I’ve wanted to build a project around it for a while. Training a small model to outperform me felt like the perfect excuse to dive in.
+There was already a public environment implementation through Prime Intellect (which Tinker natively supports!), complete with a large puzzle dataset and a verifier. I set up the verifier RL environment, pointed it at Qwen, and launched a run. 
+
+The first attempts were awful: the model guessed randomly, wasted tokens, and rarely solved anything. The real problem was lack of prior structure. So I grabbed the provided fine-tuning dataset for NYT Connections and ran a three-epoch LoRA fine-tune. 
+After some debugging, it worked and the resulting model actually made reasonable guesses. Average reward was around 2.5/6, which meant it had a basic sense of the task.
+
+Then I took that fine-tuned model and ran RL on top with importance-sampling (GRPO) loss. I used a reward scheme that rewarded correct groupings, efficiency and staying within the token budget. 
+This time things clicked. As training progressed, reward steadily increased. I kept watching the curves, with reward improving to around 3 after ~20 steps, then 3.5, then 4, then 5 after ~100 steps. After ~200 steps it plateaued around 5.75/6. 
+When I evaluated on the test dataset, average reward was about 5.75 and the model solved over 99% of the puzzles!
+
+The real moment of satisfaction came when I exported the final model weights, merged them into a local copy of Qwen, and ran the inference on my Mac using VLLM. 
+Even though it was slow, it worked and it solved the actual NYT Connections puzzle for the day. Seeing that happen in real time was surreal, and a big win for me.
+
+## What I Learned
+
+This project made it obvious how much of RL + LLM training difficulty comes from environment design and data, not only raw compute. 
+With Tinker taking care of infrastructure, I was free to focus on the actual learning problem, reward shaping, supervision, and iteration.
+
+It also showed why fine-tuning before RL is so useful. The fine-tuning run gave the model a strong foundation which RL then sharpened. 
+I also came away with a much clearer understanding of how RL and fine-tuning actually work under the hood, and not just how to run them.
+
+But this weekend also exposed limits. Trying to train multi-hop reasoning on a tiny retrieval DB was wishful thinking. 
+And training is still expensive enough that mistakes cost real money. Local inference is also bottlenecked by hardware and engine speed. 
+Still, for a weekend experiment, the results were more than I could've expected.
+
+## What’s Next
+
+I want to try the same pipeline on other puzzles like Wordle or Crossword and compare how different models behave in a shared environment. 
+Beyond that, experimenting more deliberately with reward structures, curriculum design, and loss functions is high on my list. 
+I’d also like to stress-test the setup on tasks that demand deeper reasoning to see where the approach actually breaks. 
+And at some point, I may publish this as a repo or guide, so others can play with similar setups without going through all the painful trial and error.
+
+## Conclusion
+
+Actually building the whole thing taught me more in a weekend than reading about RL ever did. When infrastructure is handled for you, you get to focus on the actual reasoning behavior of the model. 
+I saw how it learns, what the failure modes were, and how to shape its incentives. Even with almost no RL experience going in, I ended up with a Qwen-based model that can solve virtually any NYT Connections puzzle. 
+
+If you’re thinking of trying something like this, pick a task you enjoy, build a solid environment with a good dataset (or choose an existing one from Prime Intellect's library), start with a little fine-tuning, and let RL refine from there. 
+The learning comes from struggling, iterating, and solving problems as they come up.
+
+Thanks for reading :)
+
+– Alex

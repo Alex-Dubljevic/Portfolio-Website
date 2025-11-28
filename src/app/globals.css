@@ -70,7 +70,7 @@
     --chart-5: 340 75% 55%;
 
     --sh-class: #4c97f8;
-    --sh-identifier: hsl(24 9.8% 10%);
+    --sh-identifier: #e2e8f0;
     --sh-keyword: #f47067;
     --sh-string: #0fa295;
   }
@@ -108,7 +108,7 @@
     background: hsl(var(--muted-foreground) / 0.5);
   }
   .title {
-    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2 italic;
+    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2 italic leading-tight;
   }
   .link {
     @apply text-muted-foreground transition-colors hover:text-foreground;

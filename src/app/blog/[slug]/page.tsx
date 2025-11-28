@@ -28,7 +28,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const { title, image, publishedAt } = metadata;
 
   return (
-    <article className="mt-8 flex flex-col gap-8 pb-16">
+    <article className="mt-8 flex flex-col gap-4 pb-16">
       <LinkWithIcon
         href="/blog"
         position="left"
@@ -42,7 +42,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      <header>
+      <header className="mb-4">
         <h1 className="title">{title}</h1>
         <p className="mt-2 text-xs text-muted-foreground">
           {formatDate(publishedAt ?? "")}
