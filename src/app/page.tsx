@@ -19,7 +19,7 @@ import path from "path";
 const blogDirectory = path.join(process.cwd(), "content");
 const ALEX_BIRTH_YEAR = 2005;
 const LIMIT = 2;
-const words = ["AI", "Cloud", "Backend", "Design", "LLM Evals"];
+const words = ["AI", "Backend", "System Design", "LLM Evals"];
 
 export default async function Home() {
   const posts = await getPosts(blogDirectory, LIMIT);
