@@ -1,14 +1,15 @@
 {
   "career": [
     {
-      "name": "Global Markets Winter Analyst - AI Engineering",
+      "name": "AI Engineer",
       "href": "https://www.rbccm.com/en/",
       "title": "RBC Capital Markets",
       "logo": "/rbc.png",
-      "start": "Incoming Winter 2026",
-      "end": " ",
+      "start": "Jan 2026",
+      "end": "April 2026",
       "description": [
-        "Joining the Sales and Trading team to develop innovative AI solutions as part of their Global Edge program"
+        "Worked directly with Sales and Trading desks to develop production-ready AI agents for financial services",
+        "Architected robust evals and MCPs for surfacing real-time trading data"
       ]
     },
     {
@@ -19,8 +20,7 @@
       "start": "Jan 2025",
       "end": "April 2025",
       "description": [
-        "Worked on the Application Enablement team to migrate enterprise applications to Azure Cloud",
-        "Recognized as a top-performing intern and admitted into the exclusive CIBC Spark program"
+        "Worked on the Application Enablement team to migrate enterprise applications to Azure Cloud"
       ]
     },
     {
@@ -31,7 +31,7 @@
       "start": "Sep 2023",
       "end": "Present",
       "description": [
-        "Working with the Data Acquistion and Dashboard teams to develop custom telemetry systems for the team",
+        "Worked with the Data Acquistion and Dashboard teams to develop custom telemetry systems for the team",
         "Led the development of the team's driver dashboard for monitoring real-time performance from over 150 data sources"
       ]
     }
