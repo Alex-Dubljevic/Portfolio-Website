@@ -3,7 +3,18 @@
     {
       "name": "AI Engineer",
       "href": "https://www.rbccm.com/en/",
-      "title": "RBC Capital Markets",
+      "title": "RBC Capital Markets · New York City",
+      "logo": "/rbc.png",
+      "start": "Sep 2026",
+      "end": "",
+      "description": [
+        "AI & Digital Engineering Team, AI for Investment Banking"
+      ]
+    },
+    {
+      "name": "AI Engineer",
+      "href": "https://www.rbccm.com/en/",
+      "title": "RBC Capital Markets · Toronto",
       "logo": "/rbc.png",
       "start": "Jan 2026",
       "end": "April 2026",
@@ -15,7 +26,7 @@
     {
       "name": "Cloud Engineer",
       "href": "https://www.cibc.com/",
-      "title": "Canadian Imperial Bank of Commerce",
+      "title": "Canadian Imperial Bank of Commerce · Toronto",
       "logo": "/cibc.png",
       "start": "Jan 2025",
       "end": "April 2025",
@@ -26,7 +37,7 @@
     {
       "name": "Software Engineer - Dashboard Lead",
       "href": "https://www.uwfsae.ca/",
-      "title": "University of Waterloo Formula Electric",  
+      "title": "University of Waterloo Formula Electric · Waterloo",
       "logo": "/uwaterloo-fe.png",
       "start": "Sep 2023",
       "end": "Dec 2025",

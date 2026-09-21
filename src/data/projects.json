@@ -9,7 +9,7 @@
       "tags": [
         "AWS Cloud",
         "Svelte",
-        "GenAI",
+        "OpenAI API",
         "Voiceflow"
       ],
       "links": [
@@ -21,6 +21,32 @@
         {
           "name": "Devpost",
           "href": "https://devpost.com/software/budget-defender",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Camp",
+      "description": "Mac and iPhone app using AI to recommend workplace meals and group coworkers' orders to save on delivery. Won 1st place in Ramp's \"Save Time and Money\" track at HackMIT 2026.",
+      "image": "/camp.jpg",
+      "imageHref": "https://plume.hackmit.org/project/froib-urbmc-nphhn-ugmor",
+      "hackathon": "HackMIT 2026 Winner",
+      "tags": [
+        "Swift",
+        "PostgreSQL",
+        "Python",
+        "Ramp",
+        "OpenAI API"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/harryyuncheng/camp",
+          "icon": "github"
+        },
+        {
+          "name": "HackMIT",
+          "href": "https://plume.hackmit.org/project/froib-urbmc-nphhn-ugmor",
           "icon": "globe"
         }
       ]
